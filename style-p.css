@@ -188,6 +188,43 @@ section .title::after {
 }
 
 /* home section styling */
+.main-pic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 150px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-pic {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 70px;
+}
+.main-pic img {
+  box-shadow: 15px 15px 160px rgb(229, 200, 134);
+}
+@media (max-width: 1059px) {
+  .main-pic {
+    display: none;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1059px) and (max-width: 1246px) {
+  .main-pic {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1245px) {
+  .home-content {
+    margin-left: 20px;
+  }
+}
 .home {
   display: flex;
   background: url("Sprinkle.svg");
@@ -221,6 +258,16 @@ section .title::after {
   .home-content > a {
     display: block;
     margin-left: 120px;
+    /* Left margin for text elements when the viewport is 954px or more */
+  }
+}
+@media (min-width: 1059px) and (max-width: 1100px) {
+  .home-content > .text-1,
+  .home-content > .text-2,
+  .home-content > .text-3,
+  .home-content > a {
+    display: block;
+    margin-left: 50px;
     /* Left margin for text elements when the viewport is 954px or more */
   }
 }
@@ -276,20 +323,15 @@ section .title::after {
   background: none;
 }
 
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.5;
 }
 
-/* Set a specific color for each brand */
-
-/* Facebook */
 .fa-github {
   background: #010101;
   color: white;
 }
 
-/* Twitter */
 .fa-linkedin {
   background: #55acee;
   color: white;
@@ -903,7 +945,7 @@ footer {
   padding: 20px;
 }
 .contact {
-  margin-bottom: 220px; /* adjust the value to match the height of your footer */
+  margin-bottom: 200px; /* adjust the value to match the height of your footer */
 }
 body {
   display: flex;
@@ -916,7 +958,7 @@ main {
 }
 
 footer {
-  height: 200px; /* adjust the value to match the height of your footer */
+  height: 80px; /* adjust the value to match the height of your footer */
 }
 
 @media only screen and (max-width: 768px) {
@@ -925,7 +967,7 @@ footer {
   }
 }
 .footer-container {
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 @media (max-width: 395px) {
