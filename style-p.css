@@ -518,7 +518,7 @@ section .title::after {
 .skills .skills-content .left p {
   text-align: justify;
 }
-.skills{
+.skills {
   background-color: lightcyan;
 }
 .skills .skills-content .left a {
@@ -1065,3 +1065,4 @@ section .title::after {
     background-positon-x: 0px;
   }
 }
+
