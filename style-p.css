@@ -44,7 +44,7 @@ section {
 .about,
 .services,
 .skills,
-.teams,
+.projects,
 .contact,
 footer {
   font-family: "Poppins", sans-serif;
@@ -444,18 +444,18 @@ section .title::after {
 
 /* services section styling */
 .services,
-.teams {
+.projects {
   color: black;
   background: lightgoldenrodyellow;
 }
 
 .services .title::before,
-.teams .title::before {
+.projects .title::before {
   background: #120c0c;
 }
 
 .services .title::after,
-.teams .title::after {
+.projects .title::after {
   background: lightgoldenrodyellow;
   content: "what i provide";
 }
@@ -576,7 +576,7 @@ section .title::after {
 }
 
 .skills-content .right .css::before {
-  width: 60%;
+  width: 70%;
 }
 
 .skills-content .right .js::before {
@@ -591,12 +591,12 @@ section .title::after {
   width: 40%;
 }
 
-/* teams section styling */
-.teams .title::after {
-  content: "who with me";
+/* projects section styling */
+.projects .title::after {
+  content: "what i made";
 }
 
-.teams .carousel .card {
+.projects .carousel .card {
   background: lightcoral;
   border-radius: 6px;
   padding: 25px 35px;
@@ -605,11 +605,11 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover {
+.projects .carousel .card:hover {
   background: crimson;
 }
 
-.teams .carousel .card .box {
+.projects .carousel .card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -617,17 +617,17 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.teams .carousel .card:hover .box {
+.projects .carousel .card:hover .box {
   transform: scale(1.05);
 }
 
-.teams .carousel .card .text {
+.projects .carousel .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
 
-.teams .carousel .card img {
+.projects .carousel .card img {
   height: 150px;
   width: 150px;
   object-fit: cover;
@@ -635,8 +635,7 @@ section .title::after {
   border: 5px solid crimson;
   transition: all 0.3s ease;
 }
-
-.teams .carousel .card:hover img {
+.projects .carousel .card:hover img {
   border-color: #fff;
 }
 
@@ -975,6 +974,7 @@ section .title::after {
 }
 .social-icon a:hover {
   transform: translateY(-10px);
+  color: crimson;
 }
 
 .menu_item {
@@ -1065,4 +1065,3 @@ section .title::after {
     background-positon-x: 0px;
   }
 }
-
